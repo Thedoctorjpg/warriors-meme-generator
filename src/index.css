@@ -1,0 +1,44 @@
+/* Warriors Meme Generator — Global Styles */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --warriors-blue: #003087;
+  --warriors-blue-dark: #001a5c;
+  --warriors-blue-light: #00AEEF;
+  --warriors-gold: #FFCC00;
+  --warriors-black: #0a0a0a;
+  --warriors-green: #00843D;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Arial Black', Arial, sans-serif;
+  background: var(--warriors-black);
+  color: white;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+}
+
+input, select, textarea {
+  font-family: inherit;
+}
+
+/* scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #111; }
+::-webkit-scrollbar-thumb { background: var(--warriors-blue); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--warriors-blue-light); }
